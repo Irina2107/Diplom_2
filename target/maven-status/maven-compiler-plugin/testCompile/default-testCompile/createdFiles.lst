@@ -1,0 +1,4 @@
+user\RegistrationAuthorizationUpdateDeleteUserTest.class
+order\GetOrdersTest.class
+user\CreateUserTest.class
+order\CreateOrdersTest.class
