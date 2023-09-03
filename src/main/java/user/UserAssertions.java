@@ -11,7 +11,6 @@ import static org.hamcrest.Matchers.notNullValue;
 public class UserAssertions {
 
     User user;
-
     @Step("Проверка успешного создания пользователя")
     public void createdUserSuccessfully(ValidatableResponse response) {
         response
@@ -23,7 +22,6 @@ public class UserAssertions {
                 .body("accessToken", notNullValue())
                 .body("refreshToken", notNullValue());
     }
-
     @Step("Проверка успешного входа в систему")
     public void logInUserSuccessfully(ValidatableResponse response) {
         response
@@ -34,7 +32,6 @@ public class UserAssertions {
                 .body("refreshToken", notNullValue())
                 .body("user.email", equalTo(user.getEmail()))
                 .body("user.name", equalTo(user.getName()));
-
     }
 
     @Step("Проверка обновления информации о пользователе")
@@ -54,7 +51,5 @@ public class UserAssertions {
                 .statusCode(HTTP_ACCEPTED)
                 .body("success", equalTo(true))
                 .body("message", equalTo("User successfully removed"));
-
     }
-
 }

@@ -7,7 +7,7 @@ public class Client {
     private static final String BASE_URI = "https://stellarburgers.nomoreparties.site/";
     private static final String API_V1 = "api/";
 
-    protected RequestSpecification spec(){
+    protected RequestSpecification getSpec(){
         return given().log().all()
                 .contentType(ContentType.JSON)
                 .baseUri(BASE_URI)
