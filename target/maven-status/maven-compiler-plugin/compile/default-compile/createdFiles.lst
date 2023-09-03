@@ -1,0 +1,11 @@
+org\example\order\OrderClient.class
+user\UserClient.class
+org\example\Main.class
+org\example\order\Ingredients.class
+user\UserGenerator.class
+org\example\order\OrderRequest.class
+org\example\order\Orders.class
+user\Credentials.class
+user\UserAssertions.class
+org\example\Client.class
+user\User.class
